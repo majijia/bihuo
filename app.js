@@ -9,7 +9,7 @@ const routerAsset=require("./router/asset");
 //①引入第三方模块
 const bodyParse =require("body-parser");
 
-//2:创建express
+//2:创建express//
 var app = express();
 app.use(bodyParse.urlencoded({extended:false}));
 //2.1:加载处理跨域模块
