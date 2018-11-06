@@ -31,7 +31,7 @@ app.use(session({
     secret:'随机字符串',
     resave:false,
     saveUninitialized:true
-  }))
+  }));
 app.use("/imagelist",routerImageList);
 app.use("/newslist",routerNewsList);
 app.use("/user",routerUser);
