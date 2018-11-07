@@ -27,6 +27,9 @@ Vue.component(Swipe.name,Swipe);
 Vue.component(SwipeItem.name,SwipeItem);
 import VueResource from "vue-resource";
 Vue.use(VueResource);
+router.afterEach((to,from,next) => {
+    window.scrollTo(0,0);
+});
 
 //设置全局ajax请求的路径
 Vue.http.options.root="http://127.0.0.1:3000/";
